@@ -1,0 +1,113 @@
+a {
+  text-decoration: none;
+}
+
+.search-container .suggestions-container {
+  position: absolute;
+  /* top: 80px;
+  left: 80px;
+  padding-top: 10px;
+   */
+  background-color: white;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  z-index: 1;
+	background-color: white;
+}
+.left-box {
+  float: left;
+}
+.right-box {
+  float: right;
+}
+
+ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+ul.tabs li{
+  width: 70px;
+  text-align: center;
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+ul.tabs li.current{
+    border-bottom: 2px solid #225ae9;
+    color: #225ae9;
+    font-weight: bold;
+	/* background: #ededed; */
+}
+
+.tab-content{
+	display: none;
+	/* background: #ededed; */
+	padding: 15px;
+}
+
+.tab-content.current{
+	display: inherit;
+}
+
+/* 드래그나 더블클릭 시에 텍스트가 선택이 되지 않도록 설정 */
+
+/* canvas {
+  width: 100%;
+  height: 100%;
+} */
+
+html.open {
+  overflow: hidden;
+} 
+
+.menu-btn {
+width: 30px;
+height: 30px;
+
+/* right: 0px; */
+/* top: 0px; */
+z-index: 1;
+background-image: url("menu-icon.png");
+background-size: 80%;
+background-repeat: no-repeat;
+background-position: center;
+cursor: pointer;
+} 
+
+
+#menu {
+width: 150px;
+height: 100%;
+position: fixed;
+top: 0px;
+right: -152px;
+z-index: 10;
+background-color: white;
+text-align: center;
+transition: All 0.2s ease;
+-webkit-transition: All 0.2s ease;
+-moz-transition: All 0.2s ease;
+-o-transition: All 0.2s ease;
+} 
+
+#menu.open {
+right: 0px;
+}
+.page_cover.open {
+display: block;
+}
+
+.page_cover {
+width: 100%;
+height: 100%;
+position: fixed;
+  top: 0px;
+  left: 0px;
+background-color: rgba(0,0,0,0.4);
+z-index: 4;
+display: none;
+}
